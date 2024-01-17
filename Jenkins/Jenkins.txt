@@ -1,0 +1,3 @@
+INTRODUCTION TO JENKINS
+- Jenkins is an automation server thatt helps to automate the various stages involved in software development lifecycle.
+- It helps to achieve automation using pipeline where the stages and steps within those stages are defined.
