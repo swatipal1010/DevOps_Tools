@@ -45,6 +45,22 @@
     a. Go to dashboard, and click on the drop-down arrow against the name of the job
     ![image](https://github.com/swatipal1010/DevOps_Tools/assets/110754474/2654942b-4970-4bb6-8c25-f336c4e6ddde)
 
+12. Click on **Build Now** and you can see the pipleine build getting executing
+![image](https://github.com/swatipal1010/DevOps_Tools/assets/110754474/7fabed38-7dd5-46e8-b032-f775ee42debd)
+
+13.We can see the status of build (Red and cross - Failed pipeline, Green and check - Success)
+![image](https://github.com/swatipal1010/DevOps_Tools/assets/110754474/c5f10b9f-5a5d-45b6-81bb-0b0dbf9b5fc5)
+
+14. We can also see the console Output by clicking on the build and then onn **Console Output**
+![image](https://github.com/swatipal1010/DevOps_Tools/assets/110754474/df8a717b-ebaa-4969-b682-2f69bf6db3f4)
+
+![image](https://github.com/swatipal1010/DevOps_Tools/assets/110754474/b3021bdd-d869-41f5-990a-546bc1487644)
+
+
+
+
+
+
 
 
    
