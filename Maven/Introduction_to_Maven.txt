@@ -1,0 +1,66 @@
+What is Maven?
+- Maven is a BUILD TOOL which helps to manage the dependencies.
+- It is an automation & project management tool for JAVA projects.
+- It can manage the entire JAVA project i.e its source code, test code, the dependencies & libraries the project requires and the resoruces.
+- For example: If we are creating an application that requires to communicate with MYSQL server. This commmunication can be established using MySQL Connector that acts as a dependency for this application(project).
+
+- JAVA project structure contains:-
+  -> Source code
+  -> Test code
+  -> Project Structure (assests, diretories, resources) - structure in which the directories are arranged in the project
+  -> Dependency/Library (There are dependencies involved in the projects which needs to be downloaded by the developer. If this project is passed to another developer, he/she should also download the same dependencies for project to run properly)
+  -> Configuration
+  -> Task Runner - build, test, run
+  -> Reporting
+
+- Maven helps to manage this project structure. Now the developer don't needs to manually download the required dependencies by visiting the official site of the dependencies/software , Maven will do that for developers now. All the dependencies are present at "mvrepostory.com"
+- Maven is based on POM(Project Object Model) file (pom.xml) where all the dependencies requierd by the project is defined. POM file is defined in project's home directory.
+- Helps to build project into desirable format such as .jar (Java Archive) and .war (Web Archive) file.
+- Maven is itself written in JAVA.
+- Maven is called "Convention over Configuration" tool. Maven uses a standard directory structure, naming conventions, and predefined build lifecycle phases. This makes it easier for developers to understand and work on projects, as they can rely on the conventions rather than spending a lot of time configuring the build process.
+
+-Repository refers to the directories of packaged jar files.
+
+What is Build Tool?
+- It does the following:
+  -> Generate source code (tahkes the code from remote repo of VCS like GitHub)
+  -> Generate documentation of code
+  -> Compiles source code
+  -> Install the package code (jar file) in local repo, server repo or centarl repo
+
+
+pom.xml contains:-
+-> Metadata
+-> dependencies
+-> Kind of project
+-> kind of output (.jar, .war)
+-> Description
+
+One project -> One workspace -> One pom.xml file
+
+-Requirements for build
+ -> Source code (present in workspace)
+ -> Compiler (remote repo-> local repo-> workspace)
+ -> Dependencies (Remote repo-> local repo-> workspace)
+
+- Commands executed in maven are called 'goals'.
+- Maven don't directly downloads the dependencies mentioned in the pm.xml file. It first looks for the mentioned dependency in the local repository(.m2 folder). If not found there, the dependency is downloaded from the central repo to the local repo so that it can be used next time if required again.
+
+- Maven build lifecycle:
+Goals Sequence
+ -> Generate resources (pull dependencies)
+ -> Compile code
+ -> Unit Test
+ -> Package (Build in form of .jar or .war file)
+ -> install (keeping our build into local repo or artifactory - storing the artifact)
+ -> Deploy (final project is ready and hence can be deployed in the client's server)
+ -> clean (delete all runtime files)
+
+ e.g. - "mvn clean package" -- clean all the runtime files first and then create the package
+ - Whenever a Maven command is executed, all the commands defined before that command in the goals sequence all gets executed.
+
+ - Directory structure of Maven
+  - src 
+    - main
+    - test
+  - pom.xml
