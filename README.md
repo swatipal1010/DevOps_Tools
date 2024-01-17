@@ -1,2 +1,2 @@
-# Minikube_Deployment
-It contains the orchestration of docker images using Minikube
+# DevOps_Tools
+It contains the hands-on performed on various DevOps tools
